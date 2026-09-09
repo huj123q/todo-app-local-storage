@@ -1,0 +1,42 @@
+# Ignore dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Ignore build outputs
+dist/
+build/
+*.bundle.js
+*.bundle.css
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Ignore test coverage
+coverage/
+.nyc_output/
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# Ignore OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore backup files
+*.bak
+*.backup
