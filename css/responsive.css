@@ -1,0 +1,204 @@
+/* 响应式设计 */
+
+@media (max-width: 768px) {
+    .container {
+        padding: var(--spacing-sm);
+    }
+
+    .header {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: var(--spacing-md);
+        align-items: flex-start;
+    }
+
+    .logo-section h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .input-wrapper {
+        flex-direction: column;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+
+    .expand-options {
+        grid-template-columns: 1fr;
+    }
+
+    .toolbar {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+    }
+
+    .filter-tabs {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .filter-btn {
+        flex: 1;
+        justify-content: center;
+        font-size: var(--font-size-sm);
+    }
+
+    .search-box {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .toolbar-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .toolbar-actions .btn {
+        flex: 1;
+        font-size: var(--font-size-sm);
+    }
+
+    .stats-panel {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .todo-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+
+    .todo-checkbox {
+        margin-bottom: 0;
+    }
+
+    .todo-content {
+        width: 100%;
+    }
+
+    .todo-actions {
+        width: 100%;
+        margin-left: 0;
+        margin-top: var(--spacing-sm);
+    }
+
+    .todo-actions .btn {
+        flex: 1;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .modal-content {
+        width: 95%;
+        max-width: none;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --spacing-md: 12px;
+        --font-size-base: 13px;
+        --font-size-lg: 16px;
+    }
+
+    .logo-section h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    .app-subtitle {
+        display: none;
+    }
+
+    .filter-tabs {
+        gap: 2px;
+    }
+
+    .filter-btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+    }
+
+    .count {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .stats-panel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+
+    .stat-item {
+        padding: var(--spacing-md);
+    }
+
+    .stat-value {
+        font-size: var(--font-size-lg);
+    }
+
+    .todo-item {
+        padding: var(--spacing-sm);
+    }
+
+    .todo-actions {
+        gap: var(--spacing-xs);
+    }
+
+    .todo-actions .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 11px;
+    }
+
+    .toolbar-actions .btn {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: 11px;
+    }
+
+    .footer {
+        padding: var(--spacing-sm);
+    }
+
+    .footer-info {
+        font-size: 11px;
+    }
+
+    .modal-header {
+        padding: var(--spacing-md);
+    }
+
+    .modal-body {
+        padding: var(--spacing-md);
+    }
+
+    .modal-footer {
+        flex-direction: column-reverse;
+    }
+
+    .modal-footer .btn {
+        width: 100%;
+    }
+}
+
+/* 程序化样式 */
+
+@supports (display: grid) {
+    .stats-panel {
+        display: grid;
+    }
+
+    .toolbar {
+        display: flex;
+    }
+}

@@ -1,0 +1,142 @@
+/* 主题切换样式 */
+
+/* 浅色主题 - 默认 */
+body.light-theme {
+    --bg-color: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --text-color: #333333;
+    --text-light: #6c757d;
+    --border-color: #dee2e6;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 深色主题 */
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-color: #f5f5f5;
+    --text-light: #a0a0a0;
+    --border-color: #404040;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* 主题按钮可视性 */
+.btn-icon span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+/* 标签颜色适配 */
+.badge {
+    transition: all 0.3s ease;
+}
+
+/* 深色主题下的标签颜色调整 */
+body.dark-theme .badge-category {
+    background-color: #0d47a1;
+}
+
+body.dark-theme .badge-due-date {
+    background-color: #e65100;
+    color: white;
+}
+
+body.dark-theme .badge-due-date.overdue {
+    background-color: #c41c3b;
+    color: white;
+}
+
+/* 深色主题下的输入框颜色 */
+body.dark-theme .todo-input,
+body.dark-theme .form-control,
+body.dark-theme .select-control,
+body.dark-theme .date-input,
+body.dark-theme .search-input {
+    background-color: #2d2d2d;
+    border-color: #404040;
+    color: #f5f5f5;
+}
+
+body.dark-theme .todo-input::placeholder,
+body.dark-theme .search-input::placeholder {
+    color: #808080;
+}
+
+/* 深色主题下的按钮颜色 */
+body.dark-theme .btn-secondary {
+    background-color: #495057;
+}
+
+body.dark-theme .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* 深色主题下的模态框 */
+body.dark-theme .modal {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.dark-theme .context-menu {
+    background-color: #2d2d2d;
+}
+
+/* 主题转换动画 */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 增强深色模式下的对比度 */
+body.dark-theme {
+    background-color: #121212;
+}
+
+body.dark-theme .header {
+    background: linear-gradient(135deg, #0d47a1 0%, #082d73 100%);
+}
+
+body.dark-theme .stat-value {
+    color: #42a5f5;
+}
+
+body.dark-theme .filter-btn.active {
+    color: #42a5f5;
+}
+
+/* 深色模式下的程序样式 */
+body.dark-theme .todo-text {
+    color: #f5f5f5;
+}
+
+body.dark-theme .todo-meta {
+    color: #a0a0a0;
+}
+
+body.dark-theme .empty-state {
+    color: #a0a0a0;
+}
+
+body.dark-theme .empty-state h2 {
+    color: #f5f5f5;
+}
+
+/* 深色模式下的按钮颜色 */
+body.dark-theme .btn-close:hover {
+    background-color: #3a3a3a;
+}
+
+/* 深色主题下的提示文字 */
+body.dark-theme .toast {
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+}
+
+body.dark-theme .toast.success,
+body.dark-theme .toast.error,
+body.dark-theme .toast.info {
+    background-color: inherit;
+    color: inherit;
+}
